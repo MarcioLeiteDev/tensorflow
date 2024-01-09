@@ -11,8 +11,10 @@ function executar() {
 
     const tensor3 = tf.tensor([1,2,3,4]);
     const cumsum = tensor3.cumsum();
-    
 
+    const tensor4 = tf.tensor([1,2,3,4]);
+    const clone = tf.clone(tensor4);
+    
 
     txt += 'expandDIms:\n\n';
     txt += 'ANTES:\n';
@@ -31,6 +33,12 @@ function executar() {
     txt += tensor3.toString() + '\n\n';
     txt += 'Depois:\n';
     txt += cumsum.toString() + '\n\n';
+
+    txt += 'clone:\n\n';
+    txt += 'ANTES:\n';
+    txt += tensor4.toString() + '\n\n';
+    txt += 'Depois:\n';
+    txt += clone.toString() + '\n\n';
 
 
     exibir(txt)
