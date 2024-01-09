@@ -16,11 +16,21 @@ function executar(){
     // const tensor4d = tf.tensor4d([[[[1],[2]], [[3],[4]]]]);
     const tensor4d = tf.tensor4d([1,2,3,4] , [1,2,2,1]);
 
+
+    // const tensor5d = tf.tensor5d([[[[[1],[2] , [3], [4]]]]]);
+    const tensor5d = tf.tensor5d([1,2,3,4,5,6,7,8], [1,2,2,2,1]);
+
+
+    // const tensor6d = tf.tensor6d([[[[[[1],[2]], [[3],[4]]], [[[5],[6]], [[7], [8]]]]]]);
+    const tensor6d = tf.tensor6d([1,2,3,4,5,6,7,8] , [1,1,2,2,2,1]);
+
     txt += 'Tensor Escalar: \n' + escalar.toString() + '\n\n';
     txt += 'Tensor de 1 Dimensão: \n' + tensor1d.toString() + '\n\n';
     txt += 'Tensor de 2 Dimensão: \n' + tensor2d.toString() + '\n\n';
     txt += 'Tensor de 3 Dimensão: \n' + tensor3d.toString() + '\n\n';
     txt += 'Tensor de 4 Dimensão: \n' + tensor4d.toString() + '\n\n';
+    txt += 'Tensor de 5 Dimensão: \n' + tensor5d.toString() + '\n\n';
+    txt += 'Tensor de 6 Dimensão: \n' + tensor6d.toString() + '\n\n';
 
     exibir(txt)
 }
