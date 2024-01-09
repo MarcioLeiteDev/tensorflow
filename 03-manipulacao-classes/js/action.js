@@ -24,6 +24,9 @@ function executar(){
     const tensor5 = tf.tensor([1,2,3,4,5,6,7,8]);
     const as5D = tensor5.as5D(1,2,2,2,1)
 
+    const tensor6 = tf.tensor([1.5,2.7,3.1,4.8,5.2,6.9,7.3,8.7]);
+    const asType = tensor6.asType('int32')
+
     txt += 'asScalar:\n\n';
     txt += 'Antes:\n';
     txt += tensor1d.toString() + '\n\n';
@@ -65,6 +68,12 @@ function executar(){
     txt += tensor5.toString() + '\n\n';
     txt += 'DEPOIS:\n';
     txt += as5D.toString() + '\n\n';
+
+    txt += 'asType:\n\n';
+    txt += 'Antes:\n';
+    txt += tensor6.toString() + '\n\n';
+    txt += 'DEPOIS:\n';
+    txt += asType.toString() + '\n\n';
 
     exibir(txt)
 }
