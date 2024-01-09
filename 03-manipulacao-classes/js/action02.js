@@ -10,6 +10,12 @@ function executar(){
     const toInt = tensor3.toInt()
     const tensor4 = tf.tensor([1,0,1,0]);
     const toBool = tensor4.toBool()
+    const tensor5 = tf.tensor([1,2,3,4]);
+    const reshape = tensor5.reshape([2,2]);
+    const tensor6 = tf.tensor([[1,2],[3,4]]);
+    const tensor7 = tf.tensor([1,2,3,4]);
+    const reshapeAs = tensor6.reshapeAs(tensor7);
+    
 
 
 
@@ -39,6 +45,18 @@ function executar(){
     txt += tensor3.toString();
     txt += 'Depois:\n\n';
     txt += toBool;
+
+    txt += 'reshape:\n\n';
+    txt += 'Antes:\n\n';
+    txt += tensor4.toString() + '\n\n';
+    txt += 'Depois:\n\n';
+    txt += reshape.toString() + '\n\n';
+
+    txt += 'reshapeAs:\n\n';
+    txt += 'Antes:\n\n';
+    txt += tensor6.toString() + '\n\n';
+    txt += 'Depois:\n\n';
+    txt += reshapeAs.toString() + '\n\n';
 
     exibir(txt)
 }
