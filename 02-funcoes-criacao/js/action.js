@@ -11,6 +11,11 @@ function executar(){
     const zeros2 = tf.zeros([2,2]);
     const zeros3 = tf.zeros([2,4]);
 
+    const ones1 = tf.ones([1]);
+    const ones2 = tf.ones([2,2]);
+    const ones3 = tf.ones([2,4]);
+    const ones4 = tf.ones([6,2]);
+
     txt+= 'fill:\n\n';
     txt+= fill0.toString() + '\n\n';
     txt+= fill1.toString() + '\n\n';
@@ -20,6 +25,13 @@ function executar(){
     txt+= zeros1.toString() + '\n\n';
     txt+= zeros2.toString() + '\n\n';
     txt+= zeros3.toString() + '\n\n';
+
+    txt+= 'Ones:\n\n';
+    txt+= ones1.toString() + '\n\n';
+    txt+= ones2.toString() + '\n\n';
+    txt+= ones3.toString() + '\n\n';
+    txt+= ones4.toString() + '\n\n';
+
 
 
     exibir(txt)
