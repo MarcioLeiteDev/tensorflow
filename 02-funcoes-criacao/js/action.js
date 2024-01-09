@@ -16,6 +16,10 @@ function executar(){
     const ones3 = tf.ones([2,4]);
     const ones4 = tf.ones([6,2]);
 
+    const linspace1 = tf.linspace(0, 9 , 10)
+    const linspace2 = tf.linspace(1,10 , 10)
+    const linspace3 = tf.linspace(0,15 , 16)
+
     txt+= 'fill:\n\n';
     txt+= fill0.toString() + '\n\n';
     txt+= fill1.toString() + '\n\n';
@@ -31,6 +35,12 @@ function executar(){
     txt+= ones2.toString() + '\n\n';
     txt+= ones3.toString() + '\n\n';
     txt+= ones4.toString() + '\n\n';
+
+    txt+= 'Linspace:\n\n';
+    txt+= linspace1 + '\n\n';
+    txt+= linspace2 + '\n\n';
+    txt+= linspace3 + '\n\n';
+
 
 
 
