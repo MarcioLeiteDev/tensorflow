@@ -20,6 +20,10 @@ function executar(){
     const linspace2 = tf.linspace(1,10 , 10)
     const linspace3 = tf.linspace(0,15 , 16)
 
+    const range1 = tf.range(1, 11 , 1);
+    const range2 = tf.range(0, 21 , 2);
+    const range3 = tf.range(0, 101 , 10);
+
     txt+= 'fill:\n\n';
     txt+= fill0.toString() + '\n\n';
     txt+= fill1.toString() + '\n\n';
@@ -40,6 +44,12 @@ function executar(){
     txt+= linspace1 + '\n\n';
     txt+= linspace2 + '\n\n';
     txt+= linspace3 + '\n\n';
+
+    txt+= 'Range:\n\n';
+    txt+= range1 + '\n\n';
+    txt+= range2 + '\n\n';
+    txt+= range3 + '\n\n';
+
 
 
 
