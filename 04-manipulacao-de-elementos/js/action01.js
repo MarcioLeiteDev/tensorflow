@@ -21,6 +21,9 @@ function executar(){
     const tensor7 = tf.tensor([1,2,3,4,5,6,7,8] , [2,4]);
     const [ tensor8 , tensor9 ] = tf.split(tensor7, 2, 1);
 
+    const tensor10 = tf.tensor([1,2]);
+    const tile = tensor10.tile([4]);
+
 
     txt += 'pad:\n\n';
     txt += 'ANTES:\n';
@@ -53,6 +56,12 @@ function executar(){
     txt += 'Depois:\n';
     txt += tensor8.toString() + '\n\n';
     txt += tensor9.toString() + '\n\n';
+
+    txt += 'tile:\n\n';
+    txt += 'ANTES:\n';
+    txt += tensor10.toString() + '\n\n';
+    txt += 'Depois:\n';
+    txt += tile.toString() + '\n\n';
 
 
     exibir(txt)
