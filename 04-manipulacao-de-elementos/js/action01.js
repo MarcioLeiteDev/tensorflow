@@ -18,6 +18,9 @@ function executar(){
     const tensor6 = tf.tensor([1,2,3,4] , [2,2]);
     const reverse = tensor6.reverse();
 
+    const tensor7 = tf.tensor([1,2,3,4,5,6,7,8] , [2,4]);
+    const [ tensor8 , tensor9 ] = tf.split(tensor7, 2, 1);
+
 
     txt += 'pad:\n\n';
     txt += 'ANTES:\n';
@@ -43,6 +46,14 @@ function executar(){
     txt += tensor6.toString() + '\n\n';
     txt += 'Depois:\n';
     txt += reverse.toString() + '\n\n';
+
+    txt += 'split:\n\n';
+    txt += 'ANTES:\n';
+    txt += tensor7.toString() + '\n\n';
+    txt += 'Depois:\n';
+    txt += tensor8.toString() + '\n\n';
+    txt += tensor9.toString() + '\n\n';
+
 
     exibir(txt)
 }
