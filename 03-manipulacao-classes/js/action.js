@@ -9,6 +9,9 @@ function executar(){
     const tensor2d = tf.tensor([1,2,3,4] , [2,2]);
     const flatten = tensor2d.flatten();
 
+    const tensor1 = tf.tensor([1,2,3,4] , [2,2]);
+    const as1D = tensor1.as1D()
+
     txt += 'asScalar:\n\n';
     txt += 'Antes:\n';
     txt += tensor1d.toString() + '\n\n';
@@ -20,6 +23,12 @@ function executar(){
     txt += tensor2d.toString() + '\n\n';
     txt += 'DEPOIS:\n';
     txt += flatten.toString() + '\n\n';
+
+    txt += 'as1D:\n\n';
+    txt += 'Antes:\n';
+    txt += tensor1.toString() + '\n\n';
+    txt += 'DEPOIS:\n';
+    txt += as1D.toString() + '\n\n';
 
     exibir(txt)
 }
