@@ -15,6 +15,10 @@ function executar(){
     const tensor5 = tf.tensor([3,4]);
     const stack = tf.stack([tensor4 , tensor5]);
 
+    const tensor6 = tf.tensor([1,2,3,4] , [2,2]);
+    const reverse = tensor6.reverse();
+
+
     txt += 'pad:\n\n';
     txt += 'ANTES:\n';
     txt += tensor1.toString() + '\n\n';
@@ -33,6 +37,12 @@ function executar(){
     txt += tensor5.toString() + '\n\n';
     txt += 'Depois:\n';
     txt += stack.toString() + '\n\n';
+
+    txt += 'reverse:\n\n';
+    txt += 'ANTES:\n';
+    txt += tensor6.toString() + '\n\n';
+    txt += 'Depois:\n';
+    txt += reverse.toString() + '\n\n';
 
     exibir(txt)
 }
