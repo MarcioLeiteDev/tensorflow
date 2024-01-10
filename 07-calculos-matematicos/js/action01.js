@@ -18,6 +18,9 @@ function executar(){
     const tensor5 = tf.tensor([1 , -1])
     const asinh = tensor5.asinh();
 
+    const tensor6 = tf.tensor([1 , -1])
+    const atan = tensor6.atan();
+
 
 
     txt += 'abs:\n\n';
@@ -49,6 +52,12 @@ function executar(){
     txt += tensor5.toString() + '\n\n';
     txt += 'Depois:\n';
     txt += asinh.toString() + '\n\n';
+
+    txt += 'atan:\n\n';
+    txt += 'Antes:\n';
+    txt += tensor6.toString() + '\n\n';
+    txt += 'Depois:\n';
+    txt += atan.toString() + '\n\n';
 
     exibir(txt)
 }
