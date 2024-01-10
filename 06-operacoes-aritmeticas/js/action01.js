@@ -19,6 +19,10 @@ function executar(){
     const tensor8 = tf.tensor([2,5,5,4]);
     const div = tensor7.div(tensor8);
 
+    const tensor9 = tf.tensor([7,21,31,41]);
+    const tensor10 = tf.tensor([2,5,5,4]);
+    const floorDiv = tensor9.floorDiv(tensor10); // arrendodadr para baixo
+
 
     txt += 'add:\n\n';
     txt += 'Antes:\n';
@@ -47,6 +51,13 @@ function executar(){
     txt += tensor8.toString() + '\n\n';
     txt += 'Depois:\n';
     txt += div.toString() + '\n\n';
+
+    txt += 'floorDiv:\n\n';
+    txt += 'Antes:\n';
+    txt += tensor9.toString() + '\n\n';
+    txt += tensor10.toString() + '\n\n';
+    txt += 'Depois:\n';
+    txt += floorDiv.toString() + '\n\n';
 
     exibir(txt)
 }
