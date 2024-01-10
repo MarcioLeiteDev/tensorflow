@@ -9,6 +9,9 @@ function executar(){
     const tensor2 = tf.tensor([1, -1]);
     const acos = tensor2.acos();
 
+    const tensor3 = tf.tensor([1 , 2.5])
+    const acosh = tensor3.acosh();
+
     txt += 'abs:\n\n';
     txt += 'Antes:\n';
     txt += tensor1.toString() + '\n\n';
@@ -20,6 +23,12 @@ function executar(){
     txt += tensor2.toString() + '\n\n';
     txt += 'Depois:\n';
     txt += acos.toString() + '\n\n';
+
+    txt += 'acosh:\n\n';
+    txt += 'Antes:\n';
+    txt += tensor3.toString() + '\n\n';
+    txt += 'Depois:\n';
+    txt += acosh.toString() + '\n\n';
 
     exibir(txt)
 }
