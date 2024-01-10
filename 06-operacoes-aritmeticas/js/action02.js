@@ -15,6 +15,10 @@ function executar(){
     const tensor6 = tf.tensor([2,3,2,2]);
     const mod = tensor5.mod(tensor6);
 
+    const tensor7 = tf.tensor([2,3]);
+    const tensor8 = tf.tensor([3,2]);
+    const pow = tensor7.pow(tensor8);
+
     txt += 'Maximum:\n\n';
     txt += 'Antes:\n';
     txt += tensor1.toString() + '\n\n';
@@ -35,6 +39,13 @@ function executar(){
     txt += tensor6.toString() + '\n\n';
     txt += 'Depois:\n';
     txt += mod.toString() + '\n\n';
+
+    txt += 'Pow:\n\n';
+    txt += 'Antes:\n';
+    txt += tensor7.toString() + '\n\n';
+    txt += tensor8.toString() + '\n\n';
+    txt += 'Depois:\n';
+    txt += pow.toString() + '\n\n';
 
     exibir(txt)
 }
