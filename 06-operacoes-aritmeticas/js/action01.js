@@ -15,6 +15,10 @@ function executar(){
     const tensor6 = tf.tensor([1,4,5,4]);
     const mul = tensor5.mul(tensor6);
 
+    const tensor7 = tf.tensor([10,20,30,40]);
+    const tensor8 = tf.tensor([2,5,5,4]);
+    const div = tensor7.div(tensor8);
+
 
     txt += 'add:\n\n';
     txt += 'Antes:\n';
@@ -36,6 +40,13 @@ function executar(){
     txt += tensor6.toString() + '\n\n';
     txt += 'Depois:\n';
     txt += mul.toString() + '\n\n';
+
+    txt += 'div:\n\n';
+    txt += 'Antes:\n';
+    txt += tensor7.toString() + '\n\n';
+    txt += tensor8.toString() + '\n\n';
+    txt += 'Depois:\n';
+    txt += div.toString() + '\n\n';
 
     exibir(txt)
 }
