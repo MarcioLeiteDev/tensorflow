@@ -21,6 +21,8 @@ function executar(){
     const tensor6 = tf.tensor([1 , -1])
     const atan = tensor6.atan();
 
+    const atan2 = tf.atan2( 1,-1 );
+
 
 
     txt += 'abs:\n\n';
@@ -58,6 +60,12 @@ function executar(){
     txt += tensor6.toString() + '\n\n';
     txt += 'Depois:\n';
     txt += atan.toString() + '\n\n';
+
+    txt += 'atan2:\n\n';
+    txt += 'Antes:\n';
+    txt += atan2.toString() + '\n\n';
+    txt += 'Depois:\n';
+    txt += atan2.toString() + '\n\n';
 
     exibir(txt)
 }
