@@ -24,6 +24,13 @@ function executar(){
     const floorDiv = tensor9.floorDiv(tensor10); // arrendodadr para baixo
 
 
+    const tensor11 = tf.tensor([1,3]);
+    const tensor12 = tf.tensor([2,4]);
+    const tensor13 = tf.tensor([1,1]);
+    const addN = tf.addN([tensor11, tensor12, tensor13]);
+
+
+
     txt += 'add:\n\n';
     txt += 'Antes:\n';
     txt += tensor1.toString() + '\n\n';
@@ -58,6 +65,14 @@ function executar(){
     txt += tensor10.toString() + '\n\n';
     txt += 'Depois:\n';
     txt += floorDiv.toString() + '\n\n';
+
+    txt += 'AddN:\n\n';
+    txt += 'Antes:\n';
+    txt += tensor11.toString() + '\n\n';
+    txt += tensor12.toString() + '\n\n';
+    txt += tensor13.toString() + '\n\n';
+    txt += 'Depois:\n';
+    txt += addN.toString() + '\n\n';
 
     exibir(txt)
 }
