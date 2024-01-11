@@ -24,6 +24,9 @@ function executar() {
     const tensor7 = tf.tensor([-1, ,2, -3 , 0] );
     const sign = tensor7.sign();
 
+    const tensor8 = tf.tensor([1,-1] );
+    const sin = tensor8.sin();
+
     txt += 'exp:\n\n';
     txt += 'Antes:\n';
     txt += tensor1.toString() + '\n\n';
@@ -65,6 +68,12 @@ function executar() {
     txt += tensor7.toString() + '\n\n';
     txt += 'Depois:\n';
     txt += sign.toString() + '\n\n';
+
+    txt += 'sin:\n\n';
+    txt += 'Antes:\n';
+    txt += tensor8.toString() + '\n\n';
+    txt += 'Depois:\n';
+    txt += sin.toString() + '\n\n';
 
 
     exibir(txt)
