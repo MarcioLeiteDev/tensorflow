@@ -10,6 +10,9 @@ function executar(){
     const tensor2 = tf.tensor([1,2,3,4]);
     const max = tensor2.max()
 
+    const tensor3 = tf.tensor([1,2,3,4]);
+    const min = tensor2.min()
+
     txt += 'all:\n\n';
     txt += 'Antens:\n';
     txt += tensor1.toString() + '\n\n';
@@ -21,6 +24,12 @@ function executar(){
     txt += tensor2.toString() + '\n\n';
     txt += 'Depois:\n';
     txt += max.toString() + '\n\n';
+
+    txt += 'min:\n\n';
+    txt += 'Antens:\n';
+    txt += tensor3.toString() + '\n\n';
+    txt += 'Depois:\n';
+    txt += min.toString() + '\n\n';
 
 
     exibir(txt)
