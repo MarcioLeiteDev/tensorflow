@@ -13,6 +13,9 @@ function executar(){
     const tensor3 = tf.tensor([1,2,3,4]);
     const min = tensor2.min()
 
+    const tensor4 = tf.tensor([1,2,3,4]);
+    const mean = tensor4.mean()
+
     txt += 'all:\n\n';
     txt += 'Antens:\n';
     txt += tensor1.toString() + '\n\n';
@@ -30,6 +33,12 @@ function executar(){
     txt += tensor3.toString() + '\n\n';
     txt += 'Depois:\n';
     txt += min.toString() + '\n\n';
+
+    txt += 'mean:\n\n';
+    txt += 'Antens:\n';
+    txt += tensor4.toString() + '\n\n';
+    txt += 'Depois:\n';
+    txt += mean.toString() + '\n\n';
 
 
     exibir(txt)
