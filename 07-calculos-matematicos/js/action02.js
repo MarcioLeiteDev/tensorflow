@@ -36,6 +36,9 @@ function executar() {
     const tensor11 = tf.tensor([1,2,3,4,5] );
     const square = tensor11.square();
 
+    const tensor12 = tf.tensor([1,2,3,4,5] );
+    const tan = tensor12.tan();
+
     txt += 'exp:\n\n';
     txt += 'Antes:\n';
     txt += tensor1.toString() + '\n\n';
@@ -101,6 +104,12 @@ function executar() {
     txt += tensor11.toString() + '\n\n';
     txt += 'Depois:\n';
     txt += square.toString() + '\n\n';
+
+    txt += 'tan:\n\n';
+    txt += 'Antes:\n';
+    txt += tensor12.toString() + '\n\n';
+    txt += 'Depois:\n';
+    txt += tan.toString() + '\n\n';
 
 
     exibir(txt)
