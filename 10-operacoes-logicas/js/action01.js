@@ -15,6 +15,10 @@ function executar(){
     const tensor6 = tf.tensor([1,0,3,5]);
     const greaterEqual = tensor5.greaterEqual(tensor6);
 
+    const tensor7 = tf.tensor([0,2,3,7]);
+    const tensor8 = tf.tensor([1,0,3,5]);
+    const less = tensor7.less(tensor8);
+
 
     txt += 'equal:\n\n';
     txt += 'Antes:\n';
@@ -36,6 +40,13 @@ function executar(){
     txt += tensor6.toString() + '\n\n';
     txt += 'Depois:\n';
     txt += greaterEqual.toString() + '\n\n';
+
+    txt += 'less:\n\n';
+    txt += 'Antes:\n';
+    txt += tensor7.toString() + '\n\n';
+    txt += tensor8.toString() + '\n\n';
+    txt += 'Depois:\n';
+    txt += less.toString() + '\n\n';
 
 
     exibir(txt)
