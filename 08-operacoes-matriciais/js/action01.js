@@ -11,6 +11,9 @@ function executar(){
     const tensor4 = tf.tensor([3,4,5]);
     const outerProduct = tf.outerProduct(tensor3 , tensor4 )
 
+    const tensor5 = tf.tensor([1,2,3,4,5,6], [2,3]);
+    const transpose = tensor5.transpose()
+
 
     txt += 'matMul:\n\n';
     txt += 'Antes:\n';
@@ -25,6 +28,12 @@ function executar(){
     txt += tensor4.toString() + '\n\n';
     txt += 'Depois:\n';
     txt += outerProduct.toString() + '\n\n';
+
+    txt += 'transpose:\n\n';
+    txt += 'Antes:\n';
+    txt += tensor5.toString() + '\n\n';
+    txt += 'Depois:\n';
+    txt += transpose.toString() + '\n\n';
 
     exibir(txt)
 }
