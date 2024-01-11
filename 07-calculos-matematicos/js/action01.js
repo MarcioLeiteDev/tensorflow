@@ -62,10 +62,9 @@ function executar(){
     txt += atan.toString() + '\n\n';
 
     txt += 'atan2:\n\n';
-    txt += 'Antes:\n';
+    txt += 'atan2 2 de 1 e -1:\n';
     txt += atan2.toString() + '\n\n';
-    txt += 'Depois:\n';
-    txt += atan2.toString() + '\n\n';
+
 
     exibir(txt)
 }
