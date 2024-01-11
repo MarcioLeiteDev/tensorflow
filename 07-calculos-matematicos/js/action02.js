@@ -21,6 +21,9 @@ function executar() {
     const tensor6 = tf.tensor([9,25] );
     const rsqrt = tensor6.rsqrt();
 
+    const tensor7 = tf.tensor([-1, ,2, -3 , 0] );
+    const sign = tensor7.sign();
+
     txt += 'exp:\n\n';
     txt += 'Antes:\n';
     txt += tensor1.toString() + '\n\n';
@@ -56,6 +59,12 @@ function executar() {
     txt += tensor6.toString() + '\n\n';
     txt += 'Depois:\n';
     txt += rsqrt.toString() + '\n\n';
+
+    txt += 'sign:\n\n';
+    txt += 'Antes:\n';
+    txt += tensor7.toString() + '\n\n';
+    txt += 'Depois:\n';
+    txt += sign.toString() + '\n\n';
 
 
     exibir(txt)
