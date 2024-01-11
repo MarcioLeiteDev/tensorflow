@@ -31,6 +31,9 @@ function executar(){
     const tensor8 = tf.tensor([1,2]);
     const cos = tensor8.cos();
 
+    const tensor9 = tf.tensor([1,2]); // cosseno hiperbolico
+    const cosh = tensor9.cosh();
+
 
     txt += 'abs:\n\n';
     txt += 'Antes:\n';
@@ -89,6 +92,12 @@ function executar(){
     txt += tensor8.toString() + '\n\n';
     txt += 'Depois:\n';
     txt += cos.toString() + '\n\n';
+
+    txt += 'cosh:\n\n';
+    txt += 'Antes:\n';
+    txt += tensor9.toString() + '\n\n';
+    txt += 'Depois:\n';
+    txt += cosh.toString() + '\n\n';
 
 
     exibir(txt)
