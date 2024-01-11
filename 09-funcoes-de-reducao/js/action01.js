@@ -16,6 +16,9 @@ function executar(){
     const tensor4 = tf.tensor([1,2,3,4]);
     const mean = tensor4.mean()
 
+    const tensor5 = tf.tensor([1,2,3,4]);
+    const prod = tensor5.prod()
+
     txt += 'all:\n\n';
     txt += 'Antens:\n';
     txt += tensor1.toString() + '\n\n';
@@ -39,6 +42,12 @@ function executar(){
     txt += tensor4.toString() + '\n\n';
     txt += 'Depois:\n';
     txt += mean.toString() + '\n\n';
+
+    txt += 'prod:\n\n';
+    txt += 'Antens:\n';
+    txt += tensor5.toString() + '\n\n';
+    txt += 'Depois:\n';
+    txt += prod.toString() + '\n\n';
 
 
     exibir(txt)
