@@ -28,6 +28,10 @@ function executar(){
     const floor = tensor7.floor(); // arredondamento para baixo
 
 
+    const tensor8 = tf.tensor([1,2]);
+    const cos = tensor8.cos();
+
+
     txt += 'abs:\n\n';
     txt += 'Antes:\n';
     txt += tensor1.toString() + '\n\n';
@@ -79,6 +83,12 @@ function executar(){
     txt += tensor7.toString() + '\n\n';
     txt += 'Depois:\n';
     txt += floor.toString() + '\n\n';
+
+    txt += 'cos:\n\n';
+    txt += 'Antes:\n';
+    txt += tensor8.toString() + '\n\n';
+    txt += 'Depois:\n';
+    txt += cos.toString() + '\n\n';
 
 
     exibir(txt)
