@@ -33,7 +33,7 @@ function executar() {
     const tensor10 = tf.tensor([9,25,49,100] );
     const sqrt = tensor10.sqrt();
 
-    const tensor11 = tf.tensor([9,25,49,100] );
+    const tensor11 = tf.tensor([1,2,3,4,5] );
     const square = tensor11.square();
 
     txt += 'exp:\n\n';
