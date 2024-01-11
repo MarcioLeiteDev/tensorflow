@@ -23,6 +23,9 @@ function executar(){
 
     const atan2 = tf.atan2( 1,-1 );
 
+    const tensor7 = tf.tensor([1.2, 2.5 , 3.8]);
+    const ceil = tensor7.ceil(); // arredondamento para cima
+    const floor = tensor7.floor(); // arredondamento para baixo
 
 
     txt += 'abs:\n\n';
@@ -64,6 +67,18 @@ function executar(){
     txt += 'atan2:\n\n';
     txt += 'atan2 2 de 1 e -1:\n';
     txt += atan2.toString() + '\n\n';
+
+    txt += 'ceil:\n\n';
+    txt += 'Antes:\n';
+    txt += tensor7.toString() + '\n\n';
+    txt += 'Depois:\n';
+    txt += ceil.toString() + '\n\n';
+
+    txt += 'floor:\n\n';
+    txt += 'Antes:\n';
+    txt += tensor7.toString() + '\n\n';
+    txt += 'Depois:\n';
+    txt += floor.toString() + '\n\n';
 
 
     exibir(txt)
