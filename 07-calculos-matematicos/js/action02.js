@@ -12,6 +12,9 @@ function executar() {
     const tensor3 = tf.tensor([1, 2]);
     const log = tensor3.log();
 
+    const tensor4 = tf.tensor([-1, 2]);
+    const neg = tensor4.neg();
+
     txt += 'exp:\n\n';
     txt += 'Antes:\n';
     txt += tensor1.toString() + '\n\n';
@@ -29,6 +32,12 @@ function executar() {
     txt += tensor3.toString() + '\n\n';
     txt += 'Depois:\n';
     txt += log.toString() + '\n\n';
+
+    txt += 'neg:\n\n';
+    txt += 'Antes:\n';
+    txt += tensor4.toString() + '\n\n';
+    txt += 'Depois:\n';
+    txt += neg.toString() + '\n\n';
 
 
     exibir(txt)
