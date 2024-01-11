@@ -30,6 +30,9 @@ function executar() {
     const tensor9 = tf.tensor([1,-1] );
     const sinh = tensor9.sinh();
 
+    const tensor10 = tf.tensor([9,25,49,100] );
+    const sqrt = tensor10.sqrt();
+
     txt += 'exp:\n\n';
     txt += 'Antes:\n';
     txt += tensor1.toString() + '\n\n';
@@ -83,6 +86,12 @@ function executar() {
     txt += tensor9.toString() + '\n\n';
     txt += 'Depois:\n';
     txt += sinh.toString() + '\n\n';
+
+    txt += 'sqrt:\n\n';
+    txt += 'Antes:\n';
+    txt += tensor10.toString() + '\n\n';
+    txt += 'Depois:\n';
+    txt += sqrt.toString() + '\n\n';
 
 
     exibir(txt)
