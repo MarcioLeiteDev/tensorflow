@@ -18,6 +18,9 @@ function executar() {
     const tensor5 = tf.tensor([1.2 , 3.8 ,2.5 ] );
     const round = tensor4.round();
 
+    const tensor6 = tf.tensor([9,25] );
+    const rsqrt = tensor6.rsqrt();
+
     txt += 'exp:\n\n';
     txt += 'Antes:\n';
     txt += tensor1.toString() + '\n\n';
@@ -42,11 +45,17 @@ function executar() {
     txt += 'Depois:\n';
     txt += neg.toString() + '\n\n';
 
-    txt += 'roubnd:\n\n';
+    txt += 'round:\n\n';
     txt += 'Antes:\n';
     txt += tensor5.toString() + '\n\n';
     txt += 'Depois:\n';
     txt += round.toString() + '\n\n';
+
+    txt += 'rsqrt:\n\n';
+    txt += 'Antes:\n';
+    txt += tensor6.toString() + '\n\n';
+    txt += 'Depois:\n';
+    txt += rsqrt.toString() + '\n\n';
 
 
     exibir(txt)
